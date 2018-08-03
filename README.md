@@ -25,7 +25,13 @@ $ sudo apt-get install perl xgraph libxt-dev libx11-dev libxmu-dev
 edit /ns-allinone-2.35/ns-2.35/linkstate/ls.h
 
 line 137: edit 'erase' to 'this->erase'
+
+save the file ls.h.
+
+you can install the ns-2.35
+
 ```
+$ cd ns-allinone-2.35/
 $ ./install
 ```
 
