@@ -2,7 +2,7 @@
 CogMOR-MAC simulator based on NS2.35
 
 
-# 1. Install ns-2.35
+## 1. Install ns-2.35
 
 
 
@@ -12,13 +12,13 @@ https://sourceforge.net/projects/nsnam/files/allinone/ns-allinone-2.35/ns-allino
 
 
 (2) Install require lib for ubuntu 16.04
-
+```bash
 $ sudo apt-get install build-essential autoconf automake
 
 $ sudo apt-get install tcl8.5-dev tk8.5-dev
 
 $ sudo apt-get install perl xgraph libxt-dev libx11-dev libxmu-dev
-
+```
 
 (3) Install ns-2.35
 
@@ -29,7 +29,7 @@ line 137: edit 'erase' to 'this->erase'
 $ ./install
 
 
-# 2. Install CogMOR-MAC
+## 2. Install CogMOR-MAC
 
 
 
@@ -110,7 +110,7 @@ $ source ~/.bashrc
 
 
 
-# 3. Execute the tcl script
+## 3. Execute the tcl script
 
 
 
