@@ -25,9 +25,9 @@ $ sudo apt-get install perl xgraph libxt-dev libx11-dev libxmu-dev
 edit /ns-allinone-2.35/ns-2.35/linkstate/ls.h
 
 line 137: edit 'erase' to 'this->erase'
-
+```
 $ ./install
-
+```
 
 ## 2. Install CogMOR-MAC
 
@@ -39,39 +39,39 @@ $ ./install
 
 (3) Reinstallation ns-2.35
 
-
+```
 $ cd ns-allinone-2.35/ns-2.35
 
 $ make clean
 
 $ make
-
+```
 
 
 
 
 (4) Validate ns-2.35 
 
-
+```
 $ cd yourns-allinone-2.35/ns-2.35
 
 $ ./ns
-
+```
 If success you will see
-
+```
 $ %
-
+```
 
 (5) Edit environment
 
-
+```
 $ sudo gedit ~/.bashrc
-
+```
 add these line to the end of the file and edit /path/to/ns-allinone-2.35
 
 ------------------------------
-
-\# LD_LIBRARY_PATH - 2 path
+```
+# LD_LIBRARY_PATH - 2 path
 
 OTCL_LIB=/path/to/ns-allinone-2.35/otcl-1.14/
 
@@ -81,7 +81,7 @@ USR_Local_LIB=/usr/local/lib/
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$OTCL_LIB:$NS2_LIB:$USR_Local_LIB
 
-\# TCL_LIBRARY - 1 path
+# TCL_LIBRARY - 1 path
 
 TCL_LIB=/path/to/ns-allinone-2.35/tcl8.5.10/library/
 
@@ -89,7 +89,7 @@ USR_LIB=/usr/lib/
 
 export TCL_LIBRARY=$TCL_LIBRARY:$TCL_LIB:$USR_LIB
 
-\# PATH - 6 path
+# PATH - 6 path
 
 XGRAPH=/path/to/ns-allinone-2.35/xgraph-12.2/:/path/to/ns-allinone-2.35/bin/:/path/to/ns-allinone-2.35/tcl8.5.10/unix/:/path/to/ns-allinone-2.35/tk8.5.10/unix/
 
@@ -98,16 +98,16 @@ NS=/path/to/ns-allinone-2.35/ns-2.35/
 NAM=/path/to/ns-allinone-2.35/nam-1.15/
 
 export PATH=$PATH:$XGRAPH:$NS:$NAM
-
+```
 ----------------------------------
 
 
 (6) You should refresh .bashrc
 
 
-
+```
 $ source ~/.bashrc
-
+```
 
 
 ## 3. Execute the tcl script
@@ -117,8 +117,8 @@ $ source ~/.bashrc
 The tcl script is in the folder CogMOR/ns-2.35/tcl_scripts/
 
 
-
+```
 $ ns test_CogMOR3.tcl  
-
+```
 You can write your own scripts
 
