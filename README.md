@@ -14,9 +14,7 @@ https://sourceforge.net/projects/nsnam/files/allinone/ns-allinone-2.35/ns-allino
 (2) Install require lib for ubuntu 16.04
 ```bash
 $ sudo apt-get install build-essential autoconf automake
-
 $ sudo apt-get install tcl8.5-dev tk8.5-dev
-
 $ sudo apt-get install perl xgraph libxt-dev libx11-dev libxmu-dev
 ```
 
@@ -66,16 +64,14 @@ $ cp makefile.bk makefile
 [update the last-modified time of the makefile]
 1. Open the makefile. 
 2. Insert a few characters. 
-3. Delete the inserted characters, 
-4. Finally save and exit
+3. Delete the inserted characters.
+4. Finally save and exit.
 ```
 
 (5) Recompile ns-2.35
 ```
 $ cd ns-allinone-2.35/ns-2.35
-
 $ make clean
-
 $ make
 ```
 
@@ -86,7 +82,6 @@ $ make
 
 ```
 $ cd yourns-allinone-2.35/ns-2.35
-
 $ ./ns
 ```
 If success you will see
