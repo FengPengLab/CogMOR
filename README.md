@@ -43,8 +43,34 @@ $ ./install
 
 (2) Copy all the files in the directory of ns-2.35/, and paste it to ns-allinone-2.35/ns-2.35 of your installation folder
 
-(3) Reinstallation ns-2.35
+(3) Copy and save a backup of the makefile file
 
+```
+$ cp /home/xxx/ns-allinone-2.35/ns-2.35/makefile  makefile.bk
+```
+
+(4) Reinstallation ns-allinone-2.35
+
+```
+$ cd ns-allinone-2.35/
+$ ./install
+```
+
+(5) Overwrite the current makefile with the backup makefile, and change the last-modified time of the makefile to the current time
+
+```
+$ cd ns-allinone-2.35/ns-2.35
+$ rm makefile
+$ cp makefile.bk makefile
+
+[update the last-modified time of the makefile]
+1. Open the makefile. 
+2. Insert a few characters. 
+3. Delete the inserted characters, 
+4. Finally save and exit
+```
+
+(5) Recompile ns-2.35
 ```
 $ cd ns-allinone-2.35/ns-2.35
 
