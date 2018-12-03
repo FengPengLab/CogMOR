@@ -41,7 +41,7 @@ $ ./install
 
 (2) Copy all the files in the directory of ns-2.35/, and paste it to ns-allinone-2.35/ns-2.35 of your installation folder
 
-(3) Copy and save a backup of the makefile file
+(3) Copy and save a backup of the makefile
 
 ```
 $ cp /home/xxx/ns-allinone-2.35/ns-2.35/makefile  makefile.bk
